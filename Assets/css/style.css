@@ -1,33 +1,36 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* font */
-body {font-family: 'Open Sans', sans-serif;}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 
 
 /* color */
 
 :root {
-        --drbx-black: #010001;
-        --drbx-white: #FFFFFF;
-        --drbx-bkgr-and-square6: #B5D0E6;
-        --drbx-accent: #0160FF;
-        --drbx-square1: #A3D39A;
-        --drbx-square2-alternativeFont: #60092B;
-        --drbx-square3: #0192CE;
-        --drbx-square4: #FE1C1D;
-        --drbx-big-square: #F5F4F4;
-        --drbx-square5: #D4011F;
-        --drbx-square7: #0D2580;
-        --drbx-square8: #FED831;
-    }
+    --drbx-black: #010001;
+    --drbx-white: #FFFFFF;
+    --drbx-bkgr-and-square6: #B5D0E6;
+    --drbx-accent: #0160FF;
+    --drbx-square1: #A3D39A;
+    --drbx-square2-alternativeFont: #60092B;
+    --drbx-square3: #0192CE;
+    --drbx-square4: #FE1C1D;
+    --drbx-big-square: #F5F4F4;
+    --drbx-square5: #D4011F;
+    --drbx-square7: #0D2580;
+    --drbx-square8: #FED831;
+}
 
 
 /* utilities */
 
-.d_flex{
+.d_flex {
     display: flex;
 }
 
@@ -36,7 +39,7 @@ body {font-family: 'Open Sans', sans-serif;}
 .bannersite {
     width: 100%;
     height: 60px;
-   
+
 }
 
 .site_header {
@@ -45,7 +48,8 @@ body {font-family: 'Open Sans', sans-serif;}
     text-align: center;
 }
 
-.leftheader, .rightheader{
+.leftheader,
+.rightheader {
     padding: 1rem;
     text-align: center;
 }
@@ -56,7 +60,6 @@ body {font-family: 'Open Sans', sans-serif;}
     font-size: 13px;
     padding-left: 3rem;
     color: var(--drbx-black)
-    
 }
 
 #startblue {
@@ -70,8 +73,8 @@ body {font-family: 'Open Sans', sans-serif;}
 
 .container {
     width: 100%;
-    height: 500px;
-    background-color: var(--drbx-bkgr-and-square6) ;
+    height: 550px;
+    background-color: var(--drbx-bkgr-and-square6);
 }
 
 .jumbotron {
@@ -83,9 +86,9 @@ body {font-family: 'Open Sans', sans-serif;}
 
 }
 
-.titletop{
+.titletop {
     margin: 2rem;
-    font-size: 30px; 
+    font-size: 30px;
     width: 65%;
     margin-bottom: 2rem;
     margin-left: -0.2rem;
@@ -97,13 +100,13 @@ body {font-family: 'Open Sans', sans-serif;}
     font-size: 15px;
 }
 
-.infojumbo{
+.infojumbo {
     width: 350px;
     font-size: 13px;
 }
 
 .try {
-    padding-top: 2rem ;
+    padding-top: 2rem;
 }
 
 .try a {
@@ -111,8 +114,6 @@ body {font-family: 'Open Sans', sans-serif;}
     text-decoration: none;
     display: inline;
     color: var(--drbx-black)
- 
-    
 }
 
 #tryfree {
@@ -120,10 +121,109 @@ body {font-family: 'Open Sans', sans-serif;}
     padding: 0.4rem;
     color: white;
     text-decoration: none;
-    
-    
+
+
+}
+
+.arrow {
+    padding-top: 5rem;
 }
 
 
-   
-.arrow {padding-top: 2rem;}
+/* end jumbotron */
+
+.long_section {
+    width: 50%;
+    height: 1000px;
+    background-color: #A3D39A;
+    margin: 6rem auto;
+}
+
+.searchpln {
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.choice input {
+    margin-left: 1rem;
+
+}
+
+.card{
+    float: left;
+}
+
+.topcard {
+    width: 236px;
+    height: 30px;
+    border: 1px solid var(--drbx-big-square);
+    margin-left: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+
+}
+
+.topcard span {
+    font-size: 12px;
+}
+
+.maincard {
+    max-width: 235px;
+    width: 235px;
+    height: 700px;
+    border: 1px solid var(--drbx-big-square);
+    border-top: none;
+    padding: 1rem;
+    text-align: left;
+
+}
+
+.maincard h5 {
+
+    padding-top: 0.5rem;
+}
+
+.maincard p {
+    font-size: 10px;
+    color: grey;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.try30 a{
+    font-size: 12px;
+    color: white;
+    background-color: var(--drbx-accent);
+    text-decoration: none;
+    padding: 0.5rem;
+    display: inline-block;
+    margin: 2rem 0;
+    width: 100%;
+    text-align: center;
+
+}
+.buynow{
+    font-size: 12px;
+      
+}
+.midcard{
+    margin-bottom: 2rem;
+}
+
+.chechpoint h5{
+    margin: 2rem 0;
+}
+
+
+.chechpoint ol {
+    list-style: none;
+}
+
+.chechpoint li {
+    margin-top: 1rem;
+    font-size: 12px;
+}
