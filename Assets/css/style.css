@@ -10,9 +10,20 @@ body {font-family: 'Open Sans', sans-serif;}
 /* color */
 
 :root {
-  --db-head-white: white;
-  --db-startblue: #0161fe;
-}
+        --drbx-black: #010001;
+        --drbx-white: #FFFFFF;
+        --drbx-bkgr-and-square6: #B5D0E6;
+        --drbx-accent: #0160FF;
+        --drbx-square1: #A3D39A;
+        --drbx-square2-alternativeFont: #60092B;
+        --drbx-square3: #0192CE;
+        --drbx-square4: #FE1C1D;
+        --drbx-big-square: #F5F4F4;
+        --drbx-square5: #D4011F;
+        --drbx-square7: #0D2580;
+        --drbx-square8: #FED831;
+    }
+
 
 /* utilities */
 
@@ -21,6 +32,7 @@ body {font-family: 'Open Sans', sans-serif;}
 }
 
 
+/* #region header */
 .bannersite {
     width: 100%;
     height: 60px;
@@ -42,14 +54,56 @@ body {font-family: 'Open Sans', sans-serif;}
 .site_header a {
     text-decoration: none;
     font-size: 13px;
-    padding-left: 1.2rem;
+    padding-left: 3rem;
     color: gray;
     
 }
 
 #startblue {
-    background-color: var(--db-startblue);
+    background-color: var(--drbx-accent);
     padding: 0.4rem;
     color: white;
     margin-left: 1rem;
+}
+
+/* #end region header */
+
+.container {
+    width: 100%;
+    height: 500px;
+    background-color: var(--drbx-bkgr-and-square6) ;
+}
+
+.jumbotron {
+    width: 65%;
+    height: 800px;
+    margin: 0 auto;
+
+    padding: 2rem;
+
+}
+
+.titletop{
+    margin: 2rem;
+    font-size: 30px;
+    text-align: center;
+    width: 65%;
+}
+
+.midjumbo {
+    width: 100%;
+    height: 200px;
+    font-size: 15px;
+}
+
+.try a {
+    flex-direction: column;
+    text-decoration: none;
+}
+
+#tryfree {
+    background-color: var(--drbx-accent);
+    padding: 0.4rem;
+    color: white;
+    text-decoration: none;
 }
