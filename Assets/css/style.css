@@ -55,7 +55,7 @@ body {font-family: 'Open Sans', sans-serif;}
     text-decoration: none;
     font-size: 13px;
     padding-left: 3rem;
-    color: gray;
+    color: var(--drbx-black)
     
 }
 
@@ -85,9 +85,10 @@ body {font-family: 'Open Sans', sans-serif;}
 
 .titletop{
     margin: 2rem;
-    font-size: 30px;
-    text-align: center;
+    font-size: 30px; 
     width: 65%;
+    margin-bottom: 2rem;
+    margin-left: -0.2rem;
 }
 
 .midjumbo {
@@ -96,9 +97,22 @@ body {font-family: 'Open Sans', sans-serif;}
     font-size: 15px;
 }
 
+.infojumbo{
+    width: 350px;
+    font-size: 13px;
+}
+
+.try {
+    padding-top: 2rem ;
+}
+
 .try a {
     flex-direction: column;
     text-decoration: none;
+    display: inline;
+    color: var(--drbx-black)
+ 
+    
 }
 
 #tryfree {
@@ -106,4 +120,10 @@ body {font-family: 'Open Sans', sans-serif;}
     padding: 0.4rem;
     color: white;
     text-decoration: none;
+    
+    
 }
+
+
+   
+.arrow {padding-top: 2rem;}
