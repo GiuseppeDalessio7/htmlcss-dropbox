@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* font */
+body {font-family: 'Open Sans', sans-serif;}
+
+
+/* color */
+
+:root {
+  --db-head-white: white;
+  --db-startblue: #0161fe;
+}
+
+/* utilities */
+
+.d_flex{
+    display: flex;
+}
+
+
+.bannersite {
+    width: 100%;
+    height: 60px;
+   
+}
+
+.site_header {
+    height: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.leftheader, .rightheader{
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.site_header a {
+    text-decoration: none;
+    font-size: 13px;
+    padding-left: 1.2rem;
+    color: gray;
+    
+}
+
+#startblue {
+    background-color: var(--db-startblue);
+    padding: 0.4rem;
+    color: white;
+    margin-left: 1rem;
+}
