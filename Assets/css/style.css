@@ -7,6 +7,7 @@
 /* font */
 body {
     font-family: 'Open Sans', sans-serif;
+    min-width: 1440px;
 }
 
 
@@ -86,6 +87,7 @@ body {
 
 }
 
+
 .titletop {
     margin: 2rem;
     font-size: 30px;
@@ -103,6 +105,10 @@ body {
 .infojumbo {
     width: 350px;
     font-size: 13px;
+}
+
+.infojumbo p{
+    line-height: 1.3rem;
 }
 
 .try {
@@ -134,9 +140,9 @@ body {
 
 .long_section {
     width: 50%;
-    height: 1000px;
+    height: 900px;
     background-color: #A3D39A;
-    margin: 6rem auto;
+    margin: 4.5rem auto;
 }
 
 .searchpln {
@@ -226,4 +232,11 @@ body {
 .chechpoint li {
     margin-top: 1rem;
     font-size: 12px;
+}
+
+.bottom_section{
+    width: 50%;
+    height: 900px;
+    background-color: #9900ff;
+    margin: 2rem auto;
 }
