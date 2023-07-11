@@ -132,7 +132,7 @@ body {
 }
 
 .arrow {
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 
@@ -141,8 +141,8 @@ body {
 .long_section {
     width: 50%;
     height: 900px;
-    background-color: #A3D39A;
     margin: 4.5rem auto;
+    margin-bottom: 2rem;
 }
 
 .searchpln {
@@ -236,7 +236,129 @@ body {
 
 .bottom_section{
     width: 50%;
-    height: 900px;
-    background-color: #9900ff;
-    margin: 2rem auto;
+    height: 200px;
+    margin: 2rem auto 4rem auto;
+}
+
+.titlebottom_card {
+    max-width: 740px;
+    height: 30px;
+    border: 1px solid var(--drbx-big-square);
+    margin-left: 1rem;
+    text-align: center;
+}
+
+.midbottom_card, .bottom_card {
+    width: 740px;
+    height: 20%;
+    border-top: none;
+    margin-left: 1rem;
+    justify-content: space-between;
+    border: 1px solid var(--drbx-big-square);
+    padding: 1rem;
+    border-top:none;
+    border-bottom: none;
+    
+}
+
+.bottom_card{
+    border-bottom:1px solid var(--drbx-big-square); 
+    height: 100px;
+    text-align: left;
+}
+    
+
+.midbottom_card span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.midbottom_card a {
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    background-color: var(--drbx-accent);
+    height: 30px;
+    padding: 0.5rem;
+    text-align: center;
+      
+}
+
+.bottom_card h5 {
+    
+    display: inline-block;
+}
+
+.bottom_card p{
+    font-size: 12px;
+    margin-top: 1.5rem;
+    width: 80%;
+}
+
+.partner{
+    width: 745px;
+    height: 400px;
+    margin: 5rem auto;
+}
+
+.findpartner  img{
+    text-align: left;
+}
+
+.rightpartner{
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.rightpartner h5{
+    font-size: 18px;
+    text-align: left;
+}
+
+.rightpartner p{
+    font-size: 14px;
+    line-height: 1.3rem;
+    padding: 1rem 0;
+    text-align: left;
+}
+
+.btnpartner{ text-decoration: none;
+    font-size: 12px;
+    color: black;
+    border: 1px solid black;
+    height: 30px;
+    padding: 0.3rem;
+    text-align: center;
+    width: 120px;
+}
+
+.db_businnes{
+    width: 745px;
+    height: 1000px;
+    margin: 1rem auto;
+    
+}
+.db_businnes h2{
+    font-size: 28px;
+    padding: 1rem 0;
+}
+
+.db_businnes img {
+    max-width: 100%;
+}
+
+.row {
+    flex-direction: column;
+    width: calc(100% / 3);
+    float: left;
+    padding: 1rem;
+}
+
+.row span {
+    font-weight: bold;
+    font-size: 20px;
+}
+.row p {
+    font-size: 13px;
+    margin: 2rem 0;
 }
