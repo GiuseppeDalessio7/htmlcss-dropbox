@@ -501,7 +501,7 @@ body {
 
 .c_btm_marketing{
     width: 900px;
-    height: 1200px;
+    height: 200px;
     margin: 0 auto;
     padding: 4rem 0;
 }
@@ -517,4 +517,36 @@ body {
     padding: 0.5rem;
     text-decoration: none;
     height: 35px;
+}
+
+.faq{
+    width: 100%;
+    height: 200px;
+    background-color: var(--drbx-white);
+}
+
+.main_faq {
+    width: 900px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 8rem;
+
+}
+
+.main_faq > span{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 3rem;
+    display: inline-block
+}
+
+.question {
+    padding: 2rem 0;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+}
+
+.question i{
+    margin-left: 12rem;
 }
