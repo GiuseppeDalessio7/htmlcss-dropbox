@@ -36,17 +36,34 @@ body {
 }
 
 
-/* #region header */
 
-.bannersite{
-    position: sticky;
-}
+
+/* #region header */
 
 .bannersite {
     width: 100%;
-    height: 60px;
-
+    height: 50px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    background-color: var(--drbx-white);
+    box-shadow: 0 0 5px 0 black;
+    
 }
+
+.leftheader:hover {
+    border-bottom: 1px solid black;
+    transition: 1s linear;
+    
+}
+
+.rightheader:hover {
+    border-bottom: 1px solid black;
+    transition: 1s linear;
+    
+}
+
+
 
 .site_header {
     height: 100%;
@@ -58,6 +75,8 @@ body {
 .rightheader {
     padding: 1rem;
     text-align: center;
+    display: inline-block;
+    
 }
 
 
@@ -75,7 +94,13 @@ body {
     margin-left: 1rem;
 }
 
+#startblue:hover{
+    background-color: #0090ff;
+}
+
 /* #end region header */
+
+/* #region jumbotron */
 
 .container {
     width: 100%;
@@ -85,10 +110,9 @@ body {
 
 .jumbotron {
     width: 65%;
-    height: 800px;
+    height: 600px;
     margin: 0 auto;
-
-    padding: 2rem;
+    padding: 1rem;
 
 }
 
@@ -132,16 +156,21 @@ body {
     padding: 0.4rem;
     color: white;
     text-decoration: none;
+}
 
-
+#tryfree:hover{
+    background-color: #0090ff;
 }
 
 .arrow {
-    padding-top: 3rem;
+    padding-top: 5rem;
 }
 
 
 /* end jumbotron */
+
+/* #region Long section */
+
 
 .long_section {
     width: 50%;
@@ -218,6 +247,11 @@ body {
 
 }
 
+.try30:hover a {
+  
+        background-color: #0090ff;
+}
+
 .buynow {
     font-size: 12px;
 
@@ -240,6 +274,10 @@ body {
     margin-top: 1rem;
     font-size: 12px;
 }
+
+/* #end region Long section  */
+
+/* #region section Bottom section */
 
 .bottom_section {
     width: 50%;
@@ -292,6 +330,12 @@ body {
 
 }
 
+.midbottom_card:hover a{
+    background-color: #0090ff;
+}
+
+
+
 .bottom_card h5 {
 
     display: inline-block;
@@ -303,6 +347,9 @@ body {
     width: 80%;
 }
 
+/* #end region bottom section */
+
+/* #region Dropboxbusinnes */
 .partner {
     width: 900px;
     height: 400px;
@@ -342,6 +389,12 @@ body {
     width: 120px;
 }
 
+.btnpartner:hover {
+background-color: black;
+color: white;
+transition: all 1s linear;
+}
+
 .db_businnes {
     width: 900px;
     height: 1100px;
@@ -374,6 +427,10 @@ body {
     margin: 2rem 0;
 }
 
+/* #endregion Dropbox businnes */
+
+/* #region moredb  */
+
 .moredb_businnes {
     width: 50%;
     padding: 1rem;
@@ -392,6 +449,10 @@ body {
     display: inline-block;
 }
 
+/* #endregion moredb  */
+
+/* #region Marketing_db  */
+
 .marketing_db {
     width: 100%;
     height: 400px;
@@ -401,35 +462,52 @@ body {
 
 .marketing_db img {
     max-width: 100%;
-    text-align: center;
     filter: invert(1);
+    justify-content: center;
+    align-items: center;
 
 }
 
-.col-1, .col-2, .col-3 {
+.box-1, .box-2, .box-3 {
 
     width: calc(100% / 3);
     aspect-ratio: 1 / 1;
 }
 
-.col-2 {
+.box-1, .box-3{
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.box-2 {
    
     padding: 1rem;
 }
 
-.col-2 img {
+.box-2 img {
     filter: invert(0);
+}
+
+.square {
+    width: 50% ;
+    height: 200px;
+    aspect-ratio: 1 / 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
 
 .card-1 {
-    width: calc( 100% / 2);
-    display: flex;
-    flex-wrap: wrap;
-    
     padding: 1rem;
 }
+
+
 
 .card-3 {
     width: calc( 100% / 2);
@@ -443,11 +521,11 @@ body {
     flex-direction: column;
 }
 
-.col-2 hr {
+.box-2 hr {
     margin: 1rem 0;
 }
 
-.col-2 p {
+.box-2 p {
     padding: 1rem 0;
     font-size: 14px;
 }
@@ -455,6 +533,8 @@ body {
 #green {
     background-color: #a2d29a;
     padding: 3rem;
+    box-shadow: 0 0 0 8px inset #d0e9cc;
+    
 }
 
 #purple {
@@ -492,6 +572,9 @@ body {
     padding: 2rem;
 }
 
+/* #end region Marketing_db  */
+
+/* #region bottom marketing  */
 
 .bottom_marketing{
     width: 100%;
@@ -519,6 +602,10 @@ body {
     height: 35px;
 }
 
+/* #end region bottom marketing  */
+
+/* #region section faq  */
+
 .faq{
     width: 100%;
     height: 700px;
@@ -545,11 +632,32 @@ body {
     border: 1px solid black;
     border-left: none;
     border-right: none;
+    justify-content: space-between;
 }
 
-.question i{
+.question p{
     margin-left: 12rem;
+    display: none;
 }
+
+.question:hover p{
+    display: block;
+}
+
+
+.question:hover i{
+    margin-left: 10rem ;
+    rotate: 180deg;
+}
+
+.question i {
+    transition: rotate linear 1s;
+    margin-left: 10rem ;
+}
+
+/* #end region section faq  */
+
+/* # region section footer  */
 
 .link_footer {
     width: 100%;
@@ -572,7 +680,6 @@ body {
     list-style-type: none;
     margin: 1rem 0;
     font-size: 15px;
-
 }
 
 .card-top-footer{
@@ -592,6 +699,5 @@ body {
     padding-bottom: 2rem;
     border-top: 1px solid #ffffff;
     margin-left: 150px;
-    
-
 }
+/* # region section footer  */
